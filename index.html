@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinutha's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Vinutha </div>
+        <ul class="nav-links">
+            <li data-section="home">Home</li>
+            <li data-section="resume">Resume</li>
+            <li data-section="biodata">Bio-data</li>
+            <li data-section="contact">Contact</li>
+        </ul>
+        <button class="mode-toggle">🌞</button>
+    </nav>
+
+    <!-- Sections -->
+    <section id="home" class="section active">
+        <div class="hero">
+            <h1>Welcome to My Creative Portfolio</h1>
+            <p>Explore my journey as a developer, innovator, and creator.</p>
+            <div class="hero-buttons">
+                <button class="cta" data-section="resume">Explore Resume</button>
+                <button class="cta" data-section="biodata">Explore Bio-data</button>
+                <a href="VINUTHA_RESUME.pdf" download class="cta download-resume">Download Resume</a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/vinutha-hallur-50192425a" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://x.com/Vinutha794974?t=p477Q1SuIHMcvFoDTPmJHQ&s=09" target="_blank" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://github.com/Vinutha-17" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="section">
+        <h2>My Resume</h2>
+        <div class="resume-cards">
+            <div class="card">
+                <h3>Education</h3>
+                <p>B.E in Computer Science, JSSATEB</p>
+            </div>
+            <div class="card">
+                <h3>Skills</h3>
+                <p> AI/ML,DSA in JAVA,HTML,CSS,Javascript,C,DBMS </p>
+            </div>
+            <div class="card">
+                <h3>Projects</h3>
+                <p>Amazon Clone, QR Code generator, Product Comparision Website</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="biodata" class="section">
+        <h2>Bio-data</h2>
+        <div class="bio-content">
+            <div class="bio-card">
+                <h3>Personal Details</h3>
+                <ul>
+                    <li><strong>Name:</strong> Vinutha V Hallur</li>
+                    <li><strong>Age:</strong> 21</li>
+                    <li><strong>Father Name:</strong> Vitthal</li>
+                    <li><strong>Mother Name:</strong> Manjula</li>
+                    <li><strong>Email:</strong> vinuthahallur1709@gmail.com</li>
+                    <li><strong>School:</strong> Sri Siddaganga CBSE School</li>
+                    <li><strong>PreUniversity collgee:</strong> GV P U COLLEGE</li>
+                    <li><strong>Degree College:</strong> JSSATE Bengaluru</li>
+                    <li><strong>Location:</strong> Davanagere, 577004</li>
+                    <li><strong>Hobbies:</strong> Coding, Gaming, Music,Painting,Travelling</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <div class="contact-form-container">
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                    <small>Your full name will help us personalize the communication.</small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Your email address" required>
+                    <small>We will send our response to this email.</small>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" rows="4" placeholder="What would you like to say?" required></textarea>
+                    <small>Tell us your message or inquiry.</small>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <p><strong>Email:</strong> vinuthahallur1709@gmail.com@gmail.com</p>
+            <p><strong>Phone:</strong> +91 8050421709</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Vinutha V Hallur. All rights reserved.</p>
+    </footer>
+</body>
+</html>
